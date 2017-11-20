@@ -132,18 +132,39 @@ body {
 	text-align:center;
 }
 
+.formulaImageCell{
+	padding: 0px;
+	height: 73px;
+    width: 100%;
+}
+
 .formulaImage{
 	width: 100%;
-    height: auto;
+    height: 100%;
+	padding: 0%;
 }
 
 .formulaColumnTable{
 	width: 100%;
+	height: 67px;
+	
 }
 
 .formulaTable{
 	width: 75%;
 	table-layout: fixed;
+}
+
+.formulaTable2{
+	width: 35%;
+	table-layout: fixed;
+}
+.elemntFormulaTable{
+	width: 100%;
+}
+
+.formulaColumnTable2{
+	width: 100%;
 }
 
 h4{

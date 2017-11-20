@@ -299,23 +299,23 @@ function convertTemperatura(){
 		element.innerHTML = "";
 		
 		if(unit == 1){
-			var K = cantidad + 273.15;     
-			var F = 9/5*cantidad + 32;
-			var R = F + 459.67;
+			var Kk = cantidad + 273.15;     
+			var Ff = 9/5 * cantidad + 32;
+			var Rr = Ff + 459.67;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" °C equivalen a:</h4></br>"+K.toFixed(4)+" K</br>"+F.toFixed(4)+" °F</br>"+R.toFixed(4)+" R" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" °C equivalen a:</h4></br>"+Kk+" K</br>"+Ff.toFixed(4)+" °F</br>"+Rr.toFixed(4)+" R" );
 		}else if(unit == 2){
 			var C = cantidad - 273.15;     
 			var F = 9/5*C + 32;
 			var R = F + 459.67;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" K equivalen a:</h4></br>"+C.toFixed(4)+" °C</br>"+F.toFixed(4)+" °F</br>"+R.toFixed(4)+" R" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" K equivalen a:</h4></br>"+C.toFixed(4)+" °C</br>"+F.toFixed(4)+" °F</br>"+R+" R" );
 		}else if(unit == 3){
 			var C = ( cantidad - 32)* 5/9;     
 			var K = C + 273.15;
 			var R = cantidad + 459.67;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" °F equivalen a:</h4></br>"+C.toFixed(4)+" °C</br>"+K.toFixed(4)+" K</br>"+R.toFixed(4)+" R" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" °F equivalen a:</h4></br>"+C.toFixed(4)+" °C</br>"+K.toFixed(4)+" K</br>"+R+" R" );
 		}else if(unit == 4){
 			var F = cantidad - 459.67;     
 			var C = (F - 32)*5/9;
@@ -512,7 +512,7 @@ function convertArea(){
 		if(unit == 1){
 			var m2 = cantidad / 10000;     
             var km2 = cantidad / 10000000000;
-            var in2 = cantidad / (2.54^2);
+            var in2 = cantidad / (2.54 * 2.54);
             var ft2 = cantidad / (30.48^2);
             var yd2 = cantidad / (91.44^2);
             var milla2 = cantidad / (160934.4^2);
@@ -522,7 +522,7 @@ function convertArea(){
 		}else if(unit == 2){
 			var cm2 = cantidad * 10000;     
             var km2 = cm2 / 10000000000;
-            var in2 = cm2 / (2.54^2);
+            var in2 = cm2 / (2.54 * 2.54);
             var ft2 = cm2 / (30.48^2);
             var yd2 = cm2 / (91.44^2);
             var milla2 = cm2 / (160934.4^2);
@@ -532,7 +532,7 @@ function convertArea(){
 		}else if(unit == 3){
 			var cm2 = cantidad * 10000000000;     
             var m2 = cm2 / 10000;     
-            var in2 = cm2 / (2.54^2);
+            var in2 = cm2 / (2.54 * 2.54);
             var ft2 = cm2 / (30.48^2);
             var yd2 = cm2 / (91.44^2);
             var milla2 = cm2 / (160934.4^2);
@@ -555,7 +555,7 @@ function convertArea(){
 			var cm2 = cantidad * (30.48^2);     
             var m2 = cm2 / 10000;
             var km2 = cm2 / 10000000000;
-            var in2 = cm2 / (2.54^2);
+            var in2 = cm2 / (2.54 * 2.54);
             var yd2 = cm2 / (91.44^2);
             var milla2 = cm2 / (160934.4^2);
             var hec2 = cm2 / 100000000;
@@ -575,7 +575,7 @@ function convertArea(){
 			var cm2 = cantidad * (160934.4^2);     
             var m2 = cm2 / 10000;
             var km2 = cm2 / 10000000000;
-            var in2 = cm2 / (2.54^2);
+            var in2 = cm2 / (2.54 * 2.54);
             var ft2 = cm2 / (30.48^2);
             var yd2 = cm2 / (91.44^2);
             var hec2 = cm2 / 100000000
@@ -585,7 +585,7 @@ function convertArea(){
 			cm2 = cantidad * 100000000;     
             m2 = cm2 / 10000;
             km2 = cm2 / 10000000000;
-            in2 = cm2 / (2.54^2);
+            in2 = cm2 / (2.54 * 2.54);
             ft2 = cm2 / (30.48^2);
             yd2 = cm2 / (91.44^2);
             milla2 = cm2 / (160934.4^2);
@@ -828,14 +828,14 @@ function convertDensidad(){
 			var lbin3 = ((cantidad * 2.20462)/1000)*(2.54^3);   
 			var lbft3 = ((cantidad * 2.20462)/1000)*(30.48^3);
 		
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" gr/cm&sup3 equivalen a:</h4></br>"+kgL.toFixed(4)+" kg/L</br>"+kgm3.toFixed(4)+" kg/m&sup3</br>"+lbin3.toFixed(4)+" lb/in&sup3</br>"+lbft3.toFixed(4)+" lb/ft&sup3" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" gr/cm&sup3 equivalen a:</h4></br>"+kgL+" kg/L</br>"+kgm3.toFixed(4)+" kg/m&sup3</br>"+lbin3.toFixed(4)+" lb/in&sup3</br>"+lbft3.toFixed(4)+" lb/ft&sup3" );
 		}else if(unit == 2){
 			var grcm3 = cantidad;
 			var kgm3 = grcm3 * 1000;
 			var lbin3 = ((grcm3 * 2.20462)/1000)*(2.54^3);   
 			var lbft3 = ((grcm3 * 2.20462)/1000)*(30.48^3);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kg/L equivalen a:</h4></br>"+grcm3.toFixed(4)+" g/cm&sup3</br>"+kgm3.toFixed(4)+" kg/m&sup3</br>"+lbin3.toFixed(4)+" lb/in&sup3</br>"+lbft3.toFixed(4)+" lb/ft&sup3" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kg/L equivalen a:</h4></br>"+grcm3+" g/cm&sup3</br>"+kgm3.toFixed(4)+" kg/m&sup3</br>"+lbin3.toFixed(4)+" lb/in&sup3</br>"+lbft3.toFixed(4)+" lb/ft&sup3" );
 		}else if(unit == 3){
 			var grcm3 = cantidad / 1000;
 			var kgL = grcm3;
@@ -889,7 +889,7 @@ function convertEnergia(){
             var ft2_s2 = (cantidad * .430)*25037;
             var termia = (cantidad / 1055.0559)*100000;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" J equivalen a:</h4></br>"+kJ.toFixed(4)+" kJ</br>"+Nm.toFixed(4)+" Nm</br>"+kPam3.toFixed(4)+" kPsm.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" Cal</br>"+kJ_kg.toFixed(4)+" kJ_kg</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" J equivalen a:</h4></br>"+kJ.toFixed(4)+" kJ</br>"+Nm+" Nm</br>"+kPam3.toFixed(4)+" kPsm.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" Cal</br>"+kJ_kg+" kJ_kg</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
 		}else if(unit == 2){
 			var J = cantidad * 1000;
             var Nm = J ; 
@@ -921,7 +921,7 @@ function convertEnergia(){
             var ft2_s2 = (J * .430)*25037;
             var termia = (J / 1055.0559)*100000;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" Nm equivalen a:</h4></br>"+J.toFixed(4)+" J</br>"+kJ.toFixed(4)+" kJ</br>"+kPam3.toFixed(4)+" kPsm.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" Cal</br>"+kJ_kg.toFixed(4)+" kJ_kg</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" Nm equivalen a:</h4></br>"+J+" J</br>"+kJ+" kJ</br>"+kPam3.toFixed(4)+" kPsm.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" Cal</br>"+kJ_kg+" kJ_kg</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
 		}else if(unit == 4){
 			var J = cantidad * 1000;
             var kJ = J / 1000;    
@@ -1002,7 +1002,7 @@ function convertEnergia(){
             var ft2_s2 = (J * .430)*25037;
             var termia = (J / 1055.0559)*100000;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJ_kg equivalen a:</h4></br>"+J.toFixed(4)+" J</br>"+kJ.toFixed(4)+" kJ</br>"+Nm.toFixed(4)+" Nm</br>"+kPam3.toFixed(4)+" kPa.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" cal</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJ_kg equivalen a:</h4></br>"+J+" J</br>"+kJ.toFixed(4)+" kJ</br>"+Nm+" Nm</br>"+kPam3.toFixed(4)+" kPa.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" cal</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+ft2_s2.toFixed(4)+" ft&sup2_s&sup2</br>"+termia.toFixed(4)+" termia" );
 		}else if(unit == 9){
 			var J = (cantidad * 1055.0559) / 5.40395;
             var kJ = J / 1000;    
@@ -1084,7 +1084,7 @@ function convertEnergia(){
 			
 			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" ft2_s2 equivalen a:</h4></br>"+J.toFixed(4)+" J</br>"+kJ.toFixed(4)+" kJ</br>"+Nm.toFixed(4)+" Nm</br>"+kPam3.toFixed(4)+" kPa.m&sup3</br>"+kWh.toFixed(4)+" kW/h</br>"+cal.toFixed(4)+" cal</br>"+Cal.toFixed(4)+" cal</br>"+kJ_kg.toFixed(4)+" kJ_kg</br>"+Psiaft3.toFixed(4)+" Psia.ft&sup3</br>"+lbfft.toFixed(4)+" lbf.ft</br>"+BTU.toFixed(4)+" BTU</br>"+BTU_lb.toFixed(4)+" BTU_lb</br>"+termia.toFixed(4)+" termia" );
 		}else if(unit == 14){
-			var J = (termia * 1055.0559)/100000;
+			var J = (cantidad * 1055.0559)/100000;
             var kJ = J / 1000;    
             var Nm = J ; 
             var kPam3 = J / 1000;
@@ -1160,7 +1160,7 @@ function convertPotencia(){
             var kJh = (cantidad * 3.6);
             var Tonrefri = (( cantidad * 3.41214163312794) / 60)/200;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W equivalen a:</h4></br>"+Js.toFixed(4)+" Js</br>"+kW.toFixed(4)+" kW</br>"+hp.toFixed(4)+" hp</br>"+BTUh.toFixed(4)+" BTUm</br>"+BTUmin.toFixed(4)+" BTUmin</br>"+BTUs.toFixed(4)+" BTUs</br>"+lbfts.toFixed(4)+" lbfts</br>"+hpcald.toFixed(4)+" hpcald</br>"+kJh.toFixed(4)+" kJh</br>"+Tonrefri.toFixed(4)+" Tonrefri");
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W equivalen a:</h4></br>"+Js+" Js</br>"+kW.toFixed(4)+" kW</br>"+hp.toFixed(4)+" hp</br>"+BTUh.toFixed(4)+" BTUm</br>"+BTUmin.toFixed(4)+" BTUmin</br>"+BTUs.toFixed(4)+" BTUs</br>"+lbfts.toFixed(4)+" lbfts</br>"+hpcald.toFixed(4)+" hpcald</br>"+kJh.toFixed(4)+" kJh</br>"+Tonrefri.toFixed(4)+" Tonrefri");
 		}else if(unit == 2){
 			var W = cantidad;
             var kW = W / 1000; 
@@ -1173,7 +1173,7 @@ function convertPotencia(){
             var kJh = (W * 3.6);
             var Tonrefri = (( W * 3.41214163312794) / 60)/200;
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" Js equivalen a:</h4></br>"+W.toFixed(4)+" W</br>"+kW.toFixed(4)+" kW</br>"+hp.toFixed(4)+" hp</br>"+BTUh.toFixed(4)+" BTUm</br>"+BTUmin.toFixed(4)+" BTUmin</br>"+BTUs.toFixed(4)+" BTUs</br>"+lbfts.toFixed(4)+" lbfts</br>"+hpcald.toFixed(4)+" hpcald</br>"+kJh.toFixed(4)+" kJh</br>"+Tonrefri.toFixed(4)+" Tonrefri");
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" Js equivalen a:</h4></br>"+W+" W</br>"+kW.toFixed(4)+" kW</br>"+hp.toFixed(4)+" hp</br>"+BTUh.toFixed(4)+" BTUm</br>"+BTUmin.toFixed(4)+" BTUmin</br>"+BTUs.toFixed(4)+" BTUs</br>"+lbfts.toFixed(4)+" lbfts</br>"+hpcald.toFixed(4)+" hpcald</br>"+kJh.toFixed(4)+" kJh</br>"+Tonrefri.toFixed(4)+" Tonrefri");
 		}else if(unit == 3){
 			var W = cantidad * 1000;
             var Js = W;    
@@ -1377,12 +1377,12 @@ function convertCoeficiente(){
 			var Wm2F = cantidad;
 			var BTUhft2F = (cantidad*3.41214147993575)/(10.7639104167097*1.8);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m&sup2 * °C equivalen a:</h4></br>"+Wm2F.toFixed(4)+" W/m&sup2 * F</br>"+BTUhft2F.toFixed(4)+" BTU/h * ft&sup2 * F" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m&sup2 * °C equivalen a:</h4></br>"+Wm2F+" W/m&sup2 * F</br>"+BTUhft2F.toFixed(4)+" BTU/h * ft&sup2 * F" );
 		}else if(unit == 2){
 			var Wm2C = cantidad;
 			var BTUhft2F = (Wm2C*3.41214147993575)/(10.7639104167097*1.8);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m&sup2 * F equivalen a:</h4></br>"+Wm2C.toFixed(4)+" W/m&sup2 * °C</br>"+BTUhft2F.toFixed(4)+" BTU/h * ft&sup2 * F" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m&sup2 * F equivalen a:</h4></br>"+Wm2C+" W/m&sup2 * °C</br>"+BTUhft2F.toFixed(4)+" BTU/h * ft&sup2 * F" );
 		}else if(unit == 3){
 			var Wm2C = (cantidad/(10.7639104167097*1.8))/3.41214147993575;
 			var Wm2F = Wm2C;
@@ -1409,12 +1409,12 @@ function convertConductividad(){
 			var WmK = cantidad;
 			var BTUhftF = (cantidad*3.41214147993575)/(3.280839895*1.8);
 		
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m * °C equivalen a:</h4></br>"+WmK.toFixed(4)+" W/m * K</br>"+BTUhftF.toFixed(4)+" BTU/h * ft * F" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m * °C equivalen a:</h4></br>"+WmK+" W/m * K</br>"+BTUhftF.toFixed(4)+" BTU/h * ft * F" );
 		}else if(unit == 2){
 			var WmC = cantidad;
 			var BTUhftF =(WmC*3.41214147993575)/(3.280839895*1.8);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m * K equivalen a:</h4></br>"+WmC.toFixed(4)+" W/m * °C</br>"+BTUhftF.toFixed(4)+" BTU/h * ft * F" );
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" W/m * K equivalen a:</h4></br>"+WmC+" W/m * °C</br>"+BTUhftF.toFixed(4)+" BTU/h * ft * F" );
 		}else if(unit == 3){
 			var WmC =(cantidad*(3.280839895*1.8))/3.41214147993575;
 			var WmK = WmC
@@ -1484,21 +1484,21 @@ function convertCalor(){
 			var BTUlbmF = 4.1868*cantidad;
 			var BTUlbmR = 1.055056*cantidad/(0.45359237*1.8);
 	  
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJkg°C equivalen a:</h4></br>"+kJkgK.toFixed(4)+" kJkg°K</br>"+JgC.toFixed(4)+" Jg°C</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJkg°C equivalen a:</h4></br>"+kJkgK+" kJkg°K</br>"+JgC+" Jg°C</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
 		}else if(unit == 2){
 			var kJkgC = cantidad;
 			var JgC = kJkgC;
 			var BTUlbmF = 4.1868*kJkgC;
 			var BTUlbmR = 1.055056*kJkgC/(0.45359237*1.8);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJkg°K equivalen a:</h4></br>"+kJkgC.toFixed(4)+" kJkg°C</br>"+JgC.toFixed(4)+" Jg°C</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" kJkg°K equivalen a:</h4></br>"+kJkgC+" kJkg°C</br>"+JgC+" Jg°C</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
 		}else if(unit == 3){
 			var kJkgC = cantidad;
 			var kJkgK = kJkgC;
 			var BTUlbmF = 4.1868*kJkgC;
 			var BTUlbmR = 1.055056*kJkgC/(0.45359237*1.8);
 			
-			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" JgC equivalen a:</h4></br>"+kJkgC.toFixed(4)+" kJkg°C</br>"+kJkgK.toFixed(4)+" kJkg°K</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
+			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" JgC equivalen a:</h4></br>"+kJkgC+" kJkg°C</br>"+kJkgK+" kJkg°K</br>"+BTUlbmF.toFixed(4)+" BTUlbm°F</br>"+BTUlbmR.toFixed(4)+" BTUlbm°R");
 		}else if(unit == 4){
 			var kJkgC = 4.1868/cantidad;
 			var kJkgK = kJkgC;
