@@ -261,7 +261,7 @@ function insertEcMMN7 (){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>MW: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');	
-	form.insertAdjacentHTML("beforeend", '</br>V: ');
+	form.insertAdjacentHTML("beforeend", '</br>V:');
 	form.insertAdjacentHTML("beforeend", '<input id = "var5" name = "var5" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN7()">Resolver</button>');
 }
