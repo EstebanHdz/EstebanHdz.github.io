@@ -1,0 +1,159 @@
+html { 
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+	background-color: #efeded;
+	position:relative;
+}
+
+#accion{	
+	font-family:Sans-serif;
+	text-align:center;
+	border:none;
+	padding:20px;	
+	padding-top:20px;
+	font-size:15px;
+	background-color:#1b51d1;
+	box-shadow:0px 10px 30px #a8a8a8;	
+    font-weight: bold;
+}
+
+#accion:hover {
+    background-color: #7d93c6; 
+}
+
+#divTitle1{
+	font-family:Sans-serif;
+	text-align:center;
+	padding:10px;
+	padding-left:5px;
+	position:relative;
+	top:-5px;
+	border-top:100px;
+	height:100%;
+	width:100%;
+	background-color:#377ff2;
+	box-shadow:0px 10px 30px #a8a8a8;
+}
+
+#type{
+	text-align:center;
+	font-family:Sans-serif;
+}
+
+#buttonType{
+	font-family:Sans-serif;
+	font-size:15px;
+	padding:10px;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius: 5px;
+	border:none;
+	background-color:#c6c4c4;
+}
+
+#buttonType:hover {
+    background-color: #7d93c6; 
+}
+
+#types{
+	border:none;
+	height:35px;
+	font-size:15px;
+	font-style:bold;
+}
+
+#selectUnits{
+	border:none;
+	height:35px;
+	font-size:15px;
+	font-style:bold;
+}
+
+#cantidad{
+	border:none;
+	width:150px;
+	border-color:#c6c4c4;
+	height:35px;
+	font-size:15px;
+	font-style:bold;
+}
+
+#unitButton{
+	font-family:Sans-serif;
+	font-size:15px;
+	padding:10px;
+	padding-left:15px;
+	padding-right:15px;
+	border-radius: 5px;
+	border:none;
+	background-color:#c6c4c4;
+}
+#units{
+	text-align:center;
+	font-family:Sans-serif;
+}
+
+#resultAlert{
+	position:absolute;
+	top: 100px;
+	left:50%;
+	width:300px;
+	margin-left: -160px; 
+	background-color:rgb(55, 127, 242);
+	padding:10px;
+	-webkit-box-shadow: 0px 2px 264px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 264px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 264px 4px rgba(0,0,0,0.75);
+}
+.closebtn {
+	position:relative;
+	 z-index: 1;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 35px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#result{
+	padding-top:-300px;
+    color: white;
+    font-size: 20px;
+	text-align:center;
+}
+
+.formulaImage{
+	width: 100%;
+    height: auto;
+}
+
+.formulaColumnTable{
+	width: 100%;
+}
+
+.formulaTable{
+	width: 75%;
+	table-layout: fixed;
+}
+
+h4{
+	position:relative;
+	font-family:Sans-serif;
+	text-align:center;
+	top:-38px;
+	left:-10px;
+	padding:10px;
+	padding-top:30px;
+	width:100%;
+	background-color:#3753f1;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Ecuaciones</title>
+		<link rel = "stylesheet" href = "css/styles.css">
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+		<!--<script type="text/javascript">
+			LatexIT.add('p',true);
+		</script>-->		
+    </head>
+    <body>
+		<div id = "divTitle1">
+			<h2 id = "title1">CALORIMETRY CONST. VOL</h2>
+		</div>
+		<div id = "type">
+		<center>
+				<table  class = "formulaTable">
+					<tr class = "formulaColumnTable">
+					</tr>
+					<tr class = "formulaColumnTable">
+						<td><a href = "ecuacion.html?type=CCV&ecu=CCV1"><button  id = "buttonType" class = "formulaImage" lang="latex">q_{water} = m * Cp * \Delta T</button></a></td>
+						<td><a href = "ecuacion.html?type=CCV&ecu=CCV2"><button  id = "buttonType" class = "formulaImage" lang="latex">q_{calorimeter} = m * Cp_{calorimetry} * \Delta T</button></a></td>
+					</tr>
+					<tr class = "formulaColumnTable">
+						<td><a href = "ecuacion.html?type=CCV&ecu=CCV3"><button  id = "buttonType" class = "formulaImage" lang = "latex">q_{rxn} = -(q_{water} + q_{calorimeter})</button></a></td>
+						<td><a href = "ecuacion.html?type=CCV&ecu=CCV4"><button  id = "buttonType" class = "formulaImage"  lang = "latex">q_{gram} = \frac{q_{rxn}}{q_{sample}}</button></a></td>
+					</tr>
+					<tr class = "formulaColumnTable">
+						<td><a href = "ecuacion.html?type=CCV&ecu=CCV5"><button  id = "buttonType" class = "formulaImage"  lang = "latex">q_{molar} = \frac{q_{rxn}}{W_{sample}} MW_{solute}</button></a></td>
+					</tr>                                         
+				</table>
+			
+		</center>
+		</div>
+			<!--<center>
+				<div id = "resultAlert" class="alert">
+				<span id = "close" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+					<p id = "result"></p>
+				</div>
+				</center>-->
+    </body>
+</html>
