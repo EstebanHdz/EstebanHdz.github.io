@@ -2,29 +2,50 @@ var ecuacion;
 function startPage(){
 	ecuacion = getParameterByName('ecu');
 	type = getParameterByName('type');
-	insertImage();
-	insertForm();
+	//insertImage();
+	//insertForm();
+	insert();
 }
 
-function insertForm(){
-	if(type == 'GI'){
-		insertFormGI();
-	}else if(type == 'CCP'){
-		insertFormCCP();
-	}else if(type == 'CCV'){
-		insertFormCCV();
-	}
-}
-
-function insertImage(){
+function insert(){
 	var src = document.getElementById("type");
 	var img = document.createElement("img");
 	if(type == 'GI'){
 		insertImageGI();
+		insertFormGI();
 	}else if(type == 'CCP'){
 		insertImageCCP();
+		insertFormCCP();
 	}else if(type == 'CCV'){
 		insertImageCCV();
+		insertFormCCV();
+	}else if(type == 'MMN'){
+		insertImageMMN();
+		insertFormMMN();
+	}
+}
+
+function insertImageMMN(){
+	if(ecuacion == 'MMN1'){ 
+		//img.src = 'imgs/gasesIdeales/1.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/43/ql_870355ba7af827db732af9fd851e4b43_l3.png"/></br>');
+	}else if(ecuacion == 'MMN2'){
+		//img.src = '..imgs/gasesIdeales/2.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/c4/ql_f42d81f536d3662f644c7280f66be7c4_l3.png" /></br>');
+	}else if(ecuacion == 'MMN3'){
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/6e/ql_8c101fb7160d844f9242d445c01d666e_l3.png" /></br>');
+	}else if(ecuacion == 'MMN4'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/65/ql_351dd578fa90ae82e5bd5b22e38cd165_l3.png" /></br>');
+	}else if(ecuacion == 'MMN5'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/17/ql_f39be28c217f4ded0b40ff39efebf717_l3.png" /></br>');
+	}else if(ecuacion == 'MMN6'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/bc/ql_beb80058b9de9550f9c4ad12340650bc_l3.png" /></br>');
+	}else if(ecuacion == 'MMN7'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/40/ql_be642aae62642afe30778f3811f90c40_l3.png" /></br>');
 	}
 }
 
@@ -67,7 +88,7 @@ function insertImageGI(){
 		form.insertAdjacentHTML("beforeend", '</br><img src="http://latex.codecogs.com/gif.latex?P_{1}V_{1}&space;=&space;P_{2}V_{2}" title="P_{1}V_{1} = P_{2}V_{2}" /></br>');
 	}else if(ecuacion == 'GI2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://latex.codecogs.com/svg.latex?{P_{1}}/{V_{1}} = {P_{2}}/{V_{2}}" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/1f/ql_a8778c7377434fb82bdbb171e829f71f_l3.png" /></br>');
 	}else if(ecuacion == 'GI3'){
 		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/11/ql_9975d7ce927dca2bbacf0b173182ba11_l3.png" /></br>');
 	}else if(ecuacion == 'GI4'){
@@ -142,6 +163,107 @@ function insertFormCCV(){
 	}else if(ecuacion == 'CCV5'){
 		insertEcCCV5();
 	}
+}
+
+function insertFormMMN(){
+	if(ecuacion == 'MMN1'){ 
+		insertEcMMN1();
+	}else if(ecuacion == 'MMN2'){
+		insertEcMMN2();
+	}else if(ecuacion == 'MMN3'){
+		insertEcMMN3();
+	}else if(ecuacion == 'MMN4'){
+		insertEcMMN4();
+	}else if(ecuacion == 'MMN5'){
+		insertEcMMN5();
+	}else if(ecuacion == 'MMN6'){
+		insertEcMMN6();
+	}else if(ecuacion == 'MMN7'){
+		insertEcMMN7();
+	}
+}
+
+function insertEcMMN1 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'm: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>n: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>kg<sub>solv</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN1()">Resolver</button>');
+}
+
+function insertEcMMN2 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'w: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>w<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>w<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN2()">Resolver</button>');
+}
+
+function insertEcMMN3 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'ppm: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>w<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>w<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN3()">Resolver</button>');
+}
+
+function insertEcMMN4 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'M1: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>V1 ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>M2: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>V2: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');		
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN4()">Resolver</button>');
+}
+
+function insertEcMMN5 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'M: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>n: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>V: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN5()">Resolver</button>');
+}
+
+function insertEcMMN6 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'n: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>w: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>MW: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN6()">Resolver</button>');
+}
+
+function insertEcMMN7 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'N: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>w: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>charge: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>MW: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>V: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var5" name = "var5" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN7()">Resolver</button>');
 }
 
 function insertEcCCV1(){
