@@ -77,7 +77,7 @@ function insertImageCCP(){
 		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/73/ql_f1d1da0196aa22065ced369413b46173_l3.png"/></br>');
 	}else if(ecuacion == 'CCP2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/2e/ql_c420e3a03964b7a4553732a42d9a282e_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/a5/ql_a1c867be6c0f637da4a0a9c1cbc7c6a5_l3.png" /></br>');
 	}else if(ecuacion == 'CCP3'){
 		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/30/ql_152e7813a52c6d50e7cedaac09ef9530_l3.png" /></br>');
 	}else if(ecuacion == 'CCP4'){
@@ -299,7 +299,7 @@ function insertEcMMN1 (){
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>kg<sub>solv</sub>: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN1()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP3()">Resolver</button>');
 }
 
 function insertEcMMN2 (){
@@ -334,7 +334,7 @@ function insertEcMMN4 (){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>V2: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');		
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN4()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcGI1()">Resolver</button>');
 }
 
 function insertEcMMN5 (){
@@ -345,7 +345,7 @@ function insertEcMMN5 (){
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>V: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN5()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP3()">Resolver</button>');
 }
 
 function insertEcMMN6 (){
@@ -356,7 +356,7 @@ function insertEcMMN6 (){
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>MW: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN6()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP3()">Resolver</button>');
 }
 
 function insertEcMMN7 (){
@@ -384,7 +384,7 @@ function insertEcCCV1(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>T: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');	
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCV1()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP1()">Resolver</button>');
 }
 
 function insertEcCCV2(){
@@ -397,7 +397,7 @@ function insertEcCCV2(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>T: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');	
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCV2()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP1()">Resolver</button>');
 }
 
 function insertEcCCV3(){
@@ -408,7 +408,7 @@ function insertEcCCV3(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>q<sub>calorimeter</sub>: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCV3()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP4()">Resolver</button>');
 }
 
 function insertEcCCV4(){
@@ -419,7 +419,7 @@ function insertEcCCV4(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>q<sub>sample</sub>: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCV4()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP3()">Resolver</button>');
 }
 
 function insertEcCCV5(){
@@ -476,7 +476,7 @@ function insertEcCCP4(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>q<sub>solution</sub>: ');		
 	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
-	form.insertAdjacentHTML("beforeend", '</br>1<sub>calorimeter</sub>: ');
+	form.insertAdjacentHTML("beforeend", '</br>q<sub>calorimeter</sub>: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP4()">Resolver</button>');
 }
