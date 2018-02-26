@@ -32,129 +32,141 @@ function insert(){
 function insertImageCOL(){
 	if(ecuacion == 'COL1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/0a/ql_534106eca71e9b7b33689bea587f510a_l3.png"/></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/col/1.png" width = "200px"/></br>');
 	}else if(ecuacion == 'COL2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/69/ql_2bb04a70cc654e76585f0ffdf902e069_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/col/2.png" width = "200px"/></br>');
 	}else if(ecuacion == 'COL3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/9b/ql_d9a288c8d4ee0cf3081aef4fce124e9b_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/col/3.png" width = "200px"/></br>');
 	}else if(ecuacion == 'COL4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/b4/ql_1853edf3b78f743a303481bb4a6106b4_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/col/4.png" width = "200px"/></br>');
 	}else if(ecuacion == 'COL5'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/bc/ql_114aade448240f0c71408b48a3a92cbc_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/col/5.png" width = "200px"/></br>');
 	}
 }
 
 function insertImageQUIN(){
 	if(ecuacion == 'QUIN1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/10/ql_29c9df163c9ee128079263b9db9fd410_l3.png"/></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/1.png" width = "200px"/></br>');
 	}else if(ecuacion == 'QUIN2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/f1/ql_1fae0a6eec638f630eebe30af6589bf1_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/2.png" width = "200px"/></br>');
 	}else if(ecuacion == 'QUIN3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/27/ql_44d5e2a66450cd98ba77e77f213e9a27_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/3.png" width = "200px"/></br>');
 	}else if(ecuacion == 'QUIN4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/f1/ql_c4dde6f80833d0e7c4f5f896164c15f1_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/4.png" width = "200px"/></br>');
 	}else if(ecuacion == 'QUIN5'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/8f/ql_9d779c05ecdf56080b570aa89d823d8f_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/5.png" width = "200px"/></br>');
 	}else if(ecuacion == 'QUIN6'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/28/ql_a740447899618526eb645f2f2b045c28_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/quin/6.png" width = "200px"/></br>');
 	}
 }
 
 function insertImageMMN(){
 	if(ecuacion == 'MMN1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/43/ql_870355ba7af827db732af9fd851e4b43_l3.png"/></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/molality.png" width = "20%"/></br>');
 	}else if(ecuacion == 'MMN2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/c4/ql_f42d81f536d3662f644c7280f66be7c4_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/mass_percentage.png" width = "30%"" /></br>');
 	}else if(ecuacion == 'MMN3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/6e/ql_8c101fb7160d844f9242d445c01d666e_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/ppm.png" width = "30%"" /></br>');
 	}else if(ecuacion == 'MMN4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/65/ql_351dd578fa90ae82e5bd5b22e38cd165_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/molarity.png" width = "15%"" /></br>');
 	}else if(ecuacion == 'MMN5'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/17/ql_f39be28c217f4ded0b40ff39efebf717_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/titration.png" width = "20%"" /></br>');
 	}else if(ecuacion == 'MMN6'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/bc/ql_beb80058b9de9550f9c4ad12340650bc_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/moles.png" width = "15%"" /></br>');
 	}else if(ecuacion == 'MMN7'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/40/ql_be642aae62642afe30778f3811f90c40_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/normality.png" width = "25%"" /></br>');
+	}else if(ecuacion == 'MMN8'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/mole_percentage.png" width = "30%"/></br>');
+	}else if(ecuacion == 'MMN9'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/ppb.png" width = "30%"/></br>');
+	}else if(ecuacion == 'MMN10'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/mass_fraction.png" width = "30%"/></br>');
+	}else if(ecuacion == 'MMN11'){
+		//img.src = '..imgs/gasesIdeales/4.jpg';
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/nnm/molar_fraction.png" width = "30%"/></br>');
 	}
 }
 
 function insertImageCCP(){
 	if(ecuacion == 'CCP1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/73/ql_f1d1da0196aa22065ced369413b46173_l3.png"/></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccp/1.png" width = "200px"/></br>');
 	}else if(ecuacion == 'CCP2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/a5/ql_a1c867be6c0f637da4a0a9c1cbc7c6a5_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccp/2.png" width = "300px"/></br>');
 	}else if(ecuacion == 'CCP3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/30/ql_152e7813a52c6d50e7cedaac09ef9530_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccp/3.png" width = "200px"/></br>');
 	}else if(ecuacion == 'CCP4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/05/ql_deab3bcc33c99c69cee705ceb53c6805_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccp/4.png" width = "350px"/></br>');
 	}
 }
 
 function insertImageCCV(){
 	if(ecuacion == 'CCV1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/94/ql_e3d6c213ffab4bd2acb56148fec0a494_l3.png"/></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccv/1.png" width = "350px"/></br>');
 	}else if(ecuacion == 'CCV2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/ed/ql_43088aed3cb0564fd06396ca6bb320ed_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccv/2.png" width = "400px"/></br>');
 	}else if(ecuacion == 'CCV3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/7a/ql_9e9d044421a2692ca2078a035c65af7a_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccv/3.png" width = "350px"/></br>');
 	}else if(ecuacion == 'CCV4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/2c/ql_0ff32297f86e518482afc44a7ad9232c_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccv/4.png" width = "300px"/></br>');
 	}else if(ecuacion == 'CCV5'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/b1/ql_db85f5e71ca83b9401a82764490474b1_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/ccv/5.png" width = "350px"/></br>');
 	}
 }
 
 function insertImageGI(){
 	if(ecuacion == 'GI1'){ 
 		//img.src = 'imgs/gasesIdeales/1.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://latex.codecogs.com/gif.latex?P_{1}V_{1}&space;=&space;P_{2}V_{2}" title="P_{1}V_{1} = P_{2}V_{2}" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/1.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI2'){
 		//img.src = '..imgs/gasesIdeales/2.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/1f/ql_a8778c7377434fb82bdbb171e829f71f_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/2.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI3'){
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/11/ql_9975d7ce927dca2bbacf0b173182ba11_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/3.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI4'){
 		//img.src = '..imgs/gasesIdeales/4.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/45/ql_1e95551e16bafc8d6f411d7baa43db45_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/4.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI5'){
 		//img.src = '..imgs/gasesIdeales/5.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/ed/ql_f088934b4fd5d91f281b5e15301393ed_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/5.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI6'){
 		//img.src = '..imgs/gasesIdeales/6.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/a1/ql_1e58f6ac4e8546875108641cd2ffd6a1_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/6.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI7'){
 		//img.src = '..imgs/gasesIdeales/7.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/2e/ql_1ce58931864043cb3e5426738def522e_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/7.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI8'){
 		//img.src = '..imgs/gasesIdeales/8.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/76/ql_459f2cd9c6ce956c4d2dc2a1e80a0176_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/8.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI9'){
 		//img.src = '..imgs/gasesIdeales/9.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/03/ql_f24fafe9a7fbeb1ef1f285dc47823e03_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/9.png" width = "150px"/></br>');
 	}else if(ecuacion == 'GI10'){
 		//img.src = '..imgs/gasesIdeales/10.jpg';
-		form.insertAdjacentHTML("beforeend", '</br><img src="http://quicklatex.com/cache3/d7/ql_4ffec5e43770c4a53c03a7b0dba4e0d7_l3.png" /></br>');
+		form.insertAdjacentHTML("beforeend", '</br><img src="../EstebanHdz.github.io/imgs/gi/10.png" width = "150px"/></br>');
 	}
 }
 
@@ -223,6 +235,14 @@ function insertFormMMN(){
 		insertEcMMN6();
 	}else if(ecuacion == 'MMN7'){
 		insertEcMMN7();
+	}else if(ecuacion == 'MMN8'){
+		insertEcMMN8();
+	}else if(ecuacion == 'MMN9'){
+		insertEcMMN9();
+	}else if(ecuacion == 'MMN10'){
+		insertEcMMN10();
+	}else if(ecuacion == 'MMN11'){
+		insertEcMMN11();
 	}
 }
 
@@ -266,7 +286,7 @@ function insertEcCOL1(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>m: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');		
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCOL1()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP1()">Resolver</button>');
 }
 
 function insertEcCOL2(){
@@ -290,7 +310,7 @@ function insertEcCOL3(){
 	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
 	form.insertAdjacentHTML("beforeend", '</br>m: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');		
-	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCOL3()">Resolver</button>');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCCP1()">Resolver</button>');
 }
 
 function insertEcCOL4(){
@@ -315,7 +335,7 @@ function insertEcCOL5(){
 	form.insertAdjacentHTML("beforeend", '</br>R: ');
 	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var4" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br>T: ');
-	form.insertAdjacentHTML("beforeend", '<input id = "var4" name = "var5" type = "number">');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var5" name = "var5" type = "number">');		
 	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcCOL5()">Resolver</button>');
 }
 
@@ -470,6 +490,50 @@ function insertEcMMN7 (){
 	form.insertAdjacentHTML("beforeend", '</br>V:');
 	form.insertAdjacentHTML("beforeend", '<input id = "var5" name = "var5" type = "number">');	
 	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN7()">Resolver</button>');
+}
+
+function insertEcMMN8 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'n: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>n<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>n<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN2()">Resolver</button>');
+}
+
+function insertEcMMN9 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'ppb: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>W<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>W<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN9()">Resolver</button>');
+}
+
+function insertEcMMN10 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'X: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>W<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>W<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN10()">Resolver</button>');
+}
+
+function insertEcMMN11 (){
+	var src = document.getElementById("form");
+	form.insertAdjacentHTML("beforeend", 'Y: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var1" name = "var1" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br>n<sub>solute</sub>: ');		
+	form.insertAdjacentHTML("beforeend", '<input id = "var2" name = "var2" type = "number">');	
+	form.insertAdjacentHTML("beforeend", '</br>n<sub>solvent</sub>: ');
+	form.insertAdjacentHTML("beforeend", '<input id = "var3" name = "var3" type = "number">');
+	form.insertAdjacentHTML("beforeend", '</br><button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick="solveEcMMN10()">Resolver</button>');
 }
 
 function insertEcCCV1(){

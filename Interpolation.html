@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Ecuaciones</title>
+		<link rel = "stylesheet" href = "css/styles.css">
+		<script src="js/interpolacion.js" defer></script>		
+		<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    </head>
+    <body>
+		<div id = "divTitle1">
+			<h2 id = "title1">INTERPOLATION</h2>
+		</div>
+		<div id = "type">
+		</br>
+			<center>
+			<style>
+			input{
+	border:none;
+	width:150px;
+	border-color:#c6c4c4;
+	height:35px;
+	font-size:15px;
+	font-style:bold;
+}
+			</style>
+			
+			<img src="../EstebanHdz.github.io/imgs/interpolation.png" width = "35%" ></img>
+			<!--<img src="../EstebanHdz.github.io/imgs/interpolation.png" height = "50px" ></img>-->
+				<form id = "form" name = "getType" method = "GET">
+					<table  class = "">
+						<tr class = "">
+							<td class = "">X<sub>o</sub>: </td>
+							<td><input  name = "xo" type = "number" id = "xo" placeholder="Cantidad"></td>
+							<td class = "">Y<sub>o</sub>: </td>
+							<td><input  name = "yo" type = "number" id = "yo" placeholder="Cantidad"></td>
+						</tr>
+						<tr class = "">
+							<td class = "">X<sub>1</sub>: </td>
+							<td><input  name = "x" type = "number" id = "x" placeholder="Cantidad"></td>
+							<td class = "">Y<sub>1</sub> </td>
+							<td><input  name = "y" type = "number" id = "y" placeholder="Cantidad"></td>
+						</tr>
+						<tr class = "">
+							<td class = "">X<sub>2</sub>: </td>
+							<td><input  name = "x1" type = "number" id = "x1" placeholder="Cantidad"></td>
+							<td class = "">Y<sub>2</sub>: </td>
+							<td><input  name = "y1" type = "number" id = "y1" placeholder="Cantidad"></td>
+						</tr>
+						<tr>
+							<td colspan = "4"><center><button type = "submit" form = "getType" class = "" id = "buttonType" onclick="solveInterpolation()">Calcular</button></center></td>
+						</tr>
+					</table>
+				</form>
+			</center>
+		</div>
+    </body>
+</html>

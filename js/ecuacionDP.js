@@ -506,7 +506,7 @@ function solveEcMMN2(){
 		var var2 = document.getElementById("var2").value;
 		var var3 = document.getElementById("var3").value;
 		
-		var res = (var2 / (var3 + var2)) * 100;
+		var res = (var2 / (var3*1 + var2*1)) * 100;
 		alert("Respuesta = "+res);
 	}else if(respuesta == "var2"){
 		var var1 = document.getElementById("var1").value;
@@ -518,7 +518,7 @@ function solveEcMMN2(){
 		var var1 = document.getElementById("var1").value;
 		var var2 = document.getElementById("var2").value;
 		
-		var res = ((100/ var1) - 1) * var3;
+		var res = ((100/ var1) - 1) * var2;
 		alert("Respuesta = "+res);
 	}
 }
@@ -532,7 +532,7 @@ function solveEcMMN3(){
 		var var2 = document.getElementById("var2").value;
 		var var3 = document.getElementById("var3").value;
 		
-		var res = (var2 / (var3 + var2)) * 1000000;
+		var res = (var2 / (var3*1 + var2*1)) * 1000000;
 		alert("Respuesta = "+res);
 	}else if(respuesta == "var2"){
 		var var1 = document.getElementById("var1").value;
@@ -544,7 +544,7 @@ function solveEcMMN3(){
 		var var1 = document.getElementById("var1").value;
 		var var2 = document.getElementById("var2").value;
 		
-		var res = ((1000000/ var1) - 1) * var3;
+		var res = ((1000000/ var1) - 1) * var2;
 		alert("Respuesta = "+res);
 	}
 }
@@ -593,6 +593,58 @@ function solveEcMMN7(){
 		var var4 = document.getElementById("var4").value;
 		
 		var res = (var2 * var3) / (var1 * var4);
+		alert("Respuesta = "+res);
+	}
+}
+
+function solveEcMMN9(){
+	var form = document.getElementById("form");
+	var respuesta = checkform(form);
+	if(respuesta == "fail" || respuesta == "fail2"){
+		alert("Dejar solo un campo vacio para resolver la ecuación!");
+	}else if(respuesta == "var1"){
+		var var2 = document.getElementById("var2").value;
+		var var3 = document.getElementById("var3").value;
+		
+		var res = (var2 / (var3*1 + var2*1)) * 1000000000;
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var2"){
+		var var1 = document.getElementById("var1").value;
+		var var3 = document.getElementById("var3").value;
+		
+		var res = -((var1 * var3)/(var1 - 1000000000));
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var3"){
+		var var1 = document.getElementById("var1").value;
+		var var2 = document.getElementById("var2").value;
+		
+		var res = ((1000000000/ var1) - 1) * var2;
+		alert("Respuesta = "+res);
+	}
+}
+
+function solveEcMMN10(){
+	var form = document.getElementById("form");
+	var respuesta = checkform(form);
+	if(respuesta == "fail" || respuesta == "fail2"){
+		alert("Dejar solo un campo vacio para resolver la ecuación!");
+	}else if(respuesta == "var1"){
+		var var2 = document.getElementById("var2").value;
+		var var3 = document.getElementById("var3").value;
+		
+		var res = (var2 / (var3*1 + var2*1));
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var2"){
+		var var1 = document.getElementById("var1").value;
+		var var3 = document.getElementById("var3").value;
+		
+		var res = -((var1 * var3)/(var1));
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var3"){
+		var var1 = document.getElementById("var1").value;
+		var var2 = document.getElementById("var2").value;
+		
+		var res = ((1/ var1) - 1) * var2;
 		alert("Respuesta = "+res);
 	}
 }
@@ -771,6 +823,54 @@ function solveEcQUIN6(){
 		var var2 = document.getElementById("var2").value;
 		
 		var res = (var1 - var2)/var3;
+		alert("Respuesta = "+res);
+	}
+}
+
+function solveEcCOL5(){
+	var form = document.getElementById("form");
+	var respuesta = checkform(form);
+	if(respuesta == "fail" || respuesta == "fail2"){
+		alert("Dejar solo un campo vacio para resolver la ecuación!");
+	}else if(respuesta == "var1"){
+		var var2 = document.getElementById("var2").value;
+		var var3 = document.getElementById("var3").value;
+		var var4 = document.getElementById("var4").value;
+		var var5 = document.getElementById("var5").value;
+		
+		var res = (var3 * var4 * var2 * var5);
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var2"){
+		var var1 = document.getElementById("var1").value;
+		var var3 = document.getElementById("var3").value;
+		var var4 = document.getElementById("var4").value;
+		var var5 = document.getElementById("var5").value;
+		
+		var res = var1 / (var3 * var4 * var5);
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var3"){
+		var var2 = document.getElementById("var2").value;
+		var var1 = document.getElementById("var1").value;
+		var var4 = document.getElementById("var4").value;
+		var var5 = document.getElementById("var5").value;
+		
+		var res = var1 / (var2 * var4 * var5);
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var4"){
+		var var2 = document.getElementById("var2").value;
+		var var1 = document.getElementById("var1").value;
+		var var3 = document.getElementById("var3").value;
+		var var5 = document.getElementById("var5").value;
+		
+		var res = var1 / (var2 * var3 * var5);
+		alert("Respuesta = "+res);
+	}else if(respuesta == "var5"){
+		var var2 = document.getElementById("var2").value;
+		var var1 = document.getElementById("var1").value;
+		var var3 = document.getElementById("var3").value;
+		var var4 = document.getElementById("var4").value;
+		
+		var res = var1 / (var2 * var3 * var4);
 		alert("Respuesta = "+res);
 	}
 }
