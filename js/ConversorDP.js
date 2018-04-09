@@ -393,7 +393,7 @@ function convertVolumen(){
 		
 		if(unit == 1){
 			var L = cantidad / 1000;     
-            var m3 = cantidad / 1000000;
+            var m3 = cantidad / 1000000;	
             var onz = ((cantidad / (2.54^3))/(231))*128;
             var gal = (cantidad / (2.54^3))/(231);
             var in3 = cantidad / (2.54^3);
@@ -459,13 +459,13 @@ function convertVolumen(){
 			
 			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" in&sup3 equivalen a:</h4></br>"+cm3.toFixed(4)+" cm&sup3</br>"+m3.toFixed(4)+" m&sup3</br>"+onz.toFixed(4)+" onz</br>"+gal.toFixed(4)+" gal</br>"+L.toFixed(4)+" L</br>"+ft3.toFixed(4)+" ft&sup3</br>"+yd3.toFixed(4)+" yd&sup3</br>"+milla3.toFixed(4)+" milla&sup3" );
 		}else if(unit == 7){
-			var cm3 = (cantidad * (30.48^3));
+			var cm3 = (cantidad * (28316.846));
             var L = cm3 / 1000;     
             var m3 = cm3 / 1000000;
-            var onz = ((cm3 / (2.54^3))/(231))*128;
-            var gal = (cm3 / (2.54^3))/(231);
-            var in3 = cm3 / (2.54^3);
-            var yd3 = (cm3 / 91.44^3);
+            var onz = L / 0.0295735296;
+            var gal = L / 3.785411784;
+            var in3 = cm3 / 16.387;
+            var yd3 = (cantidad / 27);
             var milla3 = (cm3 / (160934.4^3));
 			
 			element.insertAdjacentHTML('afterbegin',"<h4>"+cantidad+" ft&sup3 equivalen a:</h4></br>"+cm3.toFixed(4)+" cm&sup3</br>"+m3.toFixed(4)+" m&sup3</br>"+onz.toFixed(4)+" onz</br>"+gal.toFixed(4)+" gal</br>"+L.toFixed(4)+" L</br>"+in3.toFixed(4)+" in&sup3</br>"+yd3.toFixed(4)+" yd&sup3</br>"+milla3.toFixed(4)+" milla&sup3" );
