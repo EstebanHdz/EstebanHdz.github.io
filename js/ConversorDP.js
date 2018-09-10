@@ -1,6 +1,6 @@
 function startPage(){
 	document.getElementById("units").style.display = "none";
-	document.getElementById("resultAlert").style.display = "none";
+	//document.getElementById("resultAlert").style.display = "none";
 }
 
 function getConversorType(){	
@@ -14,58 +14,58 @@ function getConversorType(){
 	
 	if(type == 1){		
 		HTMLLongitud();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertLongitud()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertLongitud()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 2){
 		HTMLTemperatura();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertTemperatura()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertTemperatura()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 3){
 		HTMLMasa();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertMasa()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertMasa()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 4){
 		HTMLVolumen();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertVolumen()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertVolumen()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if (type == 5){
 		HTMLArea();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertArea()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertArea()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 6){
 		HTMLPresion();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertPresion()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertPresion()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 7){
 		HTMLFuerza();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertFuerza()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertFuerza()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 8){
 		HTMLAceleracion();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertAceleracion()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertAceleracion()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 9){
 		HTMLDensidad();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertDensidad()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertDensidad()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 10){
 		HTMLEnergia();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertEnergia()">Convertir!</button>' );		
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertEnergia()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );		
 	}else if(type == 11){
 		HTMLFlujo();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertFlujo()">Convertir!</button>' );	
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertFlujo()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );	
 	}else if(type == 12){
 		HTMLPotencia();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertPotencia()">Convertir!</button>' );	
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertPotencia()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );	
 	}else if(type == 13){
 		HTMLVelocidad();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertVelocidad()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertVelocidad()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 14){
 		HTMLCoeficiente();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertCoeficiente()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertCoeficiente()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 15){
 		HTMLConductividad();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertConductividad()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertConductividad()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 16){
 		HTMLEspecifico();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertEspecifico()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertEspecifico()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 17){
 		HTMLCalor();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertCalor()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertCalor()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}else if(type == 18){
 		HTMLTasa();
-		element.insertAdjacentHTML('beforeend', '<button id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertTasa()">Convertir!</button>' );
+		element.insertAdjacentHTML('beforeend', '<button class="btn btn-primary" id="unitButton" type = "submit" form = "getUnits" value = "Units" onclick = "convertTasa()" data-toggle="modal" data-target="#resultadoModal">Convertir!</button>' );
 	}
 }
 
@@ -197,7 +197,10 @@ function HTMLTasa(){
 
 function validate(cantidad){	
 	if(cantidad == ""){
-		alert("Favor de ingresar una cantidad");
+		var element = document.getElementById("result");
+		element.innerHTML = "";
+		element.insertAdjacentHTML('afterbegin', "<h4>Favor de ingresar una cantidad valida...</h4>");
+		//alert("Favor de ingresar una cantidad");
 		return false;
 	}else{
 		return true;
@@ -212,7 +215,7 @@ function convertLongitud(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -293,7 +296,7 @@ function convertTemperatura(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -334,7 +337,7 @@ function convertMasa(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -386,7 +389,7 @@ function convertVolumen(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -504,7 +507,7 @@ function convertArea(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -603,7 +606,7 @@ function convertPresion(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -700,7 +703,7 @@ function convertFuerza(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -752,7 +755,7 @@ function convertAceleracion(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -817,7 +820,7 @@ function convertDensidad(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -869,7 +872,7 @@ function convertEnergia(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1111,7 +1114,7 @@ function convertFlujo(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1143,7 +1146,7 @@ function convertPotencia(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1303,7 +1306,7 @@ function convertVelocidad(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1368,7 +1371,7 @@ function convertCoeficiente(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1400,7 +1403,7 @@ function convertConductividad(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1432,7 +1435,7 @@ function convertEspecifico(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1473,7 +1476,7 @@ function convertCalor(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
@@ -1525,7 +1528,7 @@ function convertTasa(){
 	
 	if(validate(cantidad)){
 		
-		document.getElementById("resultAlert").style.display = "initial";
+		//document.getElementById("resultAlert").style.display = "initial";
 		
 		var element = document.getElementById("result");
 		element.innerHTML = "";
