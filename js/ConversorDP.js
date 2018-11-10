@@ -1,5 +1,9 @@
 function startPage(){
 	document.getElementById("units").style.display = "none";
+<<<<<<< HEAD
+=======
+	//document.getElementById("resultAlert").style.display = "none";
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 }
 
 function getConversorType(){	
@@ -199,6 +203,10 @@ function validate(cantidad){
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		element.insertAdjacentHTML('afterbegin', "<h4>Favor de ingresar una cantidad valida...</h4>");
+<<<<<<< HEAD
+=======
+		//alert("Favor de ingresar una cantidad");
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		return false;
 	}else{
 		return true;
@@ -212,6 +220,12 @@ function convertLongitud(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -289,6 +303,12 @@ function convertTemperatura(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -327,6 +347,12 @@ function convertMasa(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -376,6 +402,12 @@ function convertVolumen(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -491,6 +523,12 @@ function convertArea(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -587,6 +625,12 @@ function convertPresion(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -680,7 +724,14 @@ function convertFuerza(){
 	
 	var cantidad = document.getElementById("cantidad").value;
 	
+<<<<<<< HEAD
 	if(validate(cantidad)){		
+=======
+	if(validate(cantidad)){
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -730,6 +781,12 @@ function convertAceleracion(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -792,6 +849,12 @@ function convertDensidad(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -841,6 +904,12 @@ function convertEnergia(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1080,6 +1149,12 @@ function convertFlujo(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1109,6 +1184,12 @@ function convertPotencia(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1266,6 +1347,12 @@ function convertVelocidad(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1328,6 +1415,12 @@ function convertCoeficiente(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1357,6 +1450,12 @@ function convertConductividad(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1386,6 +1485,12 @@ function convertEspecifico(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1424,6 +1529,12 @@ function convertCalor(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
@@ -1473,6 +1584,12 @@ function convertTasa(){
 	var cantidad = document.getElementById("cantidad").value;
 	
 	if(validate(cantidad)){
+<<<<<<< HEAD
+=======
+		
+		//document.getElementById("resultAlert").style.display = "initial";
+		
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		
