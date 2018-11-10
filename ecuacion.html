@@ -4,12 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Ecuaciones</title>
-		<link rel = "stylesheet" href = "css/styles.css">
+		<link rel = "stylesheet" href = "css/styles2.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<script src="js/ecuacionDP.js"></script>	
 		<script src="js/ecuacionAD.js" defer></script>		
     </head>
-    <body onload = "startPage()">
-		<div id = "divTitle1">
+    <body class="body" onload = "startPage()">
+		<div class="container-fluid">
+			<div class="row title-header">
+				<div class="col">
+					<h1 class="text-center display-4">Solve Ecuation</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-1 col-sm-2 col-md-3 col-lg-4"></div>
+				<div class="col-10 col-sm-8 col-md-6 col-lg-4">
+					<div id = "type"></div>
+					<form class="form" id = "form" name = "getType" method = "GET">
+							
+					</form>
+				</div>
+				<div class="col-1 col-sm-2 col-md-3 col-lg-4"></div>
+			</div>
+		</div>
+		<!--<div id = "divTitle1">
 			<h2 id = "title1">RESOLVER ECUACION</h2>
 		</div>		
 		<center>
@@ -17,6 +36,6 @@
 			<form id = "form" name = "getType" method = "GET">
 					
 			</form>
-		</center>
+		</center>-->!
     </body>
 </html>

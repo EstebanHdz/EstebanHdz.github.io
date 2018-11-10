@@ -4,11 +4,75 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Ecuaciones</title>
-		<link rel = "stylesheet" href = "css/styles.css">
-		<script src="js/interpolacion.js" defer></script>		
+		<link rel = "stylesheet" href = "css/styles2.css">
+		<script src="js/interpolacion.js" defer></script>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">	
     </head>
-    <body>
-		<div id = "divTitle1">
+    <body class="body">
+			<form id="form" name = "getType" class="form-inline">
+		<div class="container-fluid">
+			<div class="row title-header">
+				<div class="col">
+					<h1 class="text-center display-4">Interpolation</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<img class="img" src="C:\Users\Esteban\Desktop\becario/imgs/interpolation.png" width = "35%" ></img>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-2 col-md-3 col-lg-4"></div>
+				<div class="col-8 col-md-6 col-lg-4">
+					
+						<div class="row justify-content-center">
+							<div class="col-6 form-group">
+								X<sub>o</sub> :
+								<input name="xo" type="number" class="form-control mb-2 mr-sm-2" id="xo" placeholder="Cantidad">
+							</div>
+							<div class="col-6 form-group">
+								Y<sub>o</sub> :
+								<input name="yo" type="number" class="form-control mb-2 mr-sm-2" id="yo" placeholder="Cantidad">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-6 form-group">
+								X <sub>1</sub>:
+								<input name="x" type="number" class="form-control mb-2 mr-sm-2" id="x" placeholder="Cantidad">
+							</div>
+							<div class="col-6 form-group">
+								Y <sub>1</sub>:
+								<input name="y" type="number" class="form-control mb-2 mr-sm-2" id="y" placeholder="Cantidad">
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-6 form-group">
+								X <sub>2</sub>:
+								<input name="x1" type="number" class="form-control mb-2 mr-sm-2" id="x1" placeholder="Cantidad">
+							</div>
+							<div class="col-6 form-group">
+								Y <sub>2</sub>:
+								<input name="y1" type="number" class="form-control mb-2 mr-sm-2" id="y1" placeholder="Cantidad">
+							</div>
+						</div>
+					
+				</div>
+				<div class="col-2 col-md-3 col-lg-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-3 col-md-4"></div>
+				<div class="col-6 col-md-4">
+					<button type = "submit" form = "getType" class = "btn btn-primary btn-block" id = "buttonType" onclick="solveInterpolation()">Calcular</button>
+				</div>
+				<div class="col-3 col-md-4"></div>
+			</div>
+		</div>
+	</form>
+		<!--<div id = "divTitle1">
 			<h2 id = "title1">INTERPOLATION</h2>
 		</div>
 		<div id = "type">
@@ -16,17 +80,17 @@
 			<center>
 			<style>
 			input{
-	border:none;
-	width:150px;
-	border-color:#c6c4c4;
-	height:35px;
-	font-size:15px;
-	font-style:bold;
-}
+				border:none;
+				width:150px;
+				border-color:#c6c4c4;
+				height:35px;
+				font-size:15px;
+				font-style:bold;
+			}
 			</style>
 			
 			<img src="../EstebanHdz.github.io/imgs/interpolation.png" width = "35%" ></img>
-			<!--<img src="../EstebanHdz.github.io/imgs/interpolation.png" height = "50px" ></img>-->
+			<!--<img src="../EstebanHdz.github.io/imgs/interpolation.png" height = "50px" ></img>
 				<form id = "form" name = "getType" method = "GET">
 					<table  class = "">
 						<tr class = "">
@@ -53,6 +117,6 @@
 					</table>
 				</form>
 			</center>
-		</div>
+		</div>-->
     </body>
 </html>
