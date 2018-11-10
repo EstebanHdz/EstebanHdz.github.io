@@ -4,53 +4,105 @@
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
         <title>Conversor Unidades</title>
-		<link rel = "stylesheet" href = "css/styles.css">
-		<script src="js/ConversorDP.js"></script>		
+		<link rel = "stylesheet" href = "css/styles2.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+		<script src="js/ConversorDP.js"></script>	
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
     </head>
-    <body onload = "startPage()">
-		<div id = "divTitle1">
-			<h2 id = "title1">UNIT CONVERSION</h2>
+    <body class="body" onload = "startPage()">
+		<div class="container-fluid">
+		<div class="row title-header">
+			<div class="col">
+				<h1 class="text-center display-4">Unit Conversion</h1>
+			</div>
 		</div>
-		<div id = "type">
-				<form name = "getType" method = "GET">
-					<h3>Seleccione tipo de unidades a convertir:</h3>
-					<select id = "types">
-						<option value = "1">Longitud</option>
-						<option value = "2">Temperatura</option>
-						<option value = "3">Masa</option>
-						<option value = "4">Volumen</option>
-						<option value = "5">Area</option>
-						<option value = "6">Presión</option>
-						<option value = "7">Fuerza</option>
-						<option value = "8">Aceleración</option>
-						<option value = "9">Densidad</option>
-						<option value = "10">Energía</option>
-						<option value = "11">Flujo de Calor</option>
-						<option value = "12">Potencia</option>
-						<option value = "13">Velocidad</option>
-						<option value = "14">Coeficiente transferencia de calor</option>
-						<option value = "15">Conductividad términa</option>
-						<option value = "16">Volumen específico</option>
-						<option value = "17">Calor específico</option>
-						<option value = "18">Tasa flujo volumétrico</option>
-					</select>
-					<button id = "buttonType" type = "submit" form = "getType" value = "Type" onclick = "getConversorType()">Aceptar</button>
+
+		<div class="row">
+			<div class="col" id = "tpe">
+				<h3 class="text-center">Seleccione tipo de unidades a convertir:</h3>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-0 col-sm-2 col-lg-3"></div>
+			<div class="col-12 col-sm-8 col-lg-6 text-center">
+				<form class="form" name = "getType" method = "GET">
+					<div class="form-row">
+						<div class="col-8 d-flex flex-column">
+							<select class="form-control" id = "types">
+								<option value = "1">Longitud</option>
+								<option value = "2">Temperatura</option>
+								<option value = "3">Masa</option>
+								<option value = "4">Volumen</option>
+								<option value = "5">Area</option>
+								<option value = "6">Presión</option>
+								<option value = "7">Fuerza</option>
+								<option value = "8">Aceleración</option>
+								<option value = "9">Densidad</option>
+								<option value = "10">Energía</option>
+								<option value = "11">Flujo de Calor</option>
+								<option value = "12">Potencia</option>
+								<option value = "13">Velocidad</option>
+								<option value = "14">Coeficiente transferencia de calor</option>
+								<option value = "15">Conductividad términa</option>
+								<option value = "16">Volumen específico</option>
+								<option value = "17">Calor específico</option>
+								<option value = "18">Tasa flujo volumétrico</option>
+							</select>
+						</div>
+						<div class="col-4 d-flex flex-column">
+							<button class="btn btn-outline-primary" id = "buttonType" type = "submit" form = "getType" value = "Type" onclick = "getConversorType()">Aceptar</button>
+						</div>
+					</div>
 				</form>
 			</div>
-			<div id = "units">
-				<form id = "unitsForm" name = "getUnits" method = "GET">
-					<h3>Ingrese cantidad y unidades a convertir:</h3>
-					<input  id = "cantidad" type = "number" name = "cantidad" placeholder="Cantidad">
-					<select id = "selectUnits">
-					</select>
-					<span id = "unitsButton"></span>
-				</form>
-			</div>
-			<center>
-			<div id = "resultAlert" class="alert">
-				<span id = "close" class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-					<p id = "result"></p>
+			<div class="col-0 col-sm-2 col-lg-3"></div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-0 col-sm-2 col-lg-3"></div>
+			<div class="col-12 col-sm-8 col-lg-6 text-center">
+				<div id = "units">
+					<form class="form" id = "unitsForm" name = "getUnits" method = "GET">
+						<h4>Ingrese cantidad y unidades a convertir:</h4>
+						<div class="form-row">
+							<div class="col-4 d-flex flex-column">
+								<input class="form-control" id = "cantidad" type = "number" name = "cantidad" placeholder="Cantidad">
+							</div>
+							<div class="col-4 d-flex flex-column">
+								<select class="form-control" id = "selectUnits"></select>
+							</div>
+							<div class="col-4 d-flex flex-column">
+								<div id = "unitsButton"></div>
+							</div>
+						</div>
+					</form>
 				</div>
-				</center>
+			</div>
+			<div class="col-0 col-sm-2 col-lg-3"></div>
+		</div>
+		
+		<div class="modal fade" id="resultadoModal" tabindex="-1" role="dialog" aria-labelledby="resultadoModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="resultadoModalLabel">Resultado: </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<center>
+						<p id = "result"></p>
+					</center>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
     </body>
 </html>
