@@ -1,9 +1,15 @@
 function startPage(){
 	document.getElementById("units").style.display = "none";
 <<<<<<< HEAD
+<<<<<<< HEAD
 	document.getElementById("resultAlert").style.display = "none";
 =======
 >>>>>>> parent of 603b449... Merge branch 'master' of https://github.com/EstebanHdz/EstebanHdz.github.io
+=======
+=======
+	//document.getElementById("resultAlert").style.display = "none";
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
+>>>>>>> parent of f3aed5c... qw
 }
 
 function getConversorType(){	
@@ -206,7 +212,14 @@ function validate(cantidad){
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		element.insertAdjacentHTML('afterbegin', "<h4>Favor de ingresar una cantidad valida...</h4>");
+<<<<<<< HEAD
 >>>>>>> parent of 603b449... Merge branch 'master' of https://github.com/EstebanHdz/EstebanHdz.github.io
+=======
+<<<<<<< HEAD
+=======
+		//alert("Favor de ingresar una cantidad");
+>>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
+>>>>>>> parent of f3aed5c... qw
 		return false;
 	}else{
 		return true;
