@@ -1,9 +1,5 @@
 function startPage(){
 	document.getElementById("units").style.display = "none";
-<<<<<<< HEAD
-=======
-	//document.getElementById("resultAlert").style.display = "none";
->>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 }
 
 function getConversorType(){	
@@ -203,10 +199,6 @@ function validate(cantidad){
 		var element = document.getElementById("result");
 		element.innerHTML = "";
 		element.insertAdjacentHTML('afterbegin', "<h4>Favor de ingresar una cantidad valida...</h4>");
-<<<<<<< HEAD
-=======
-		//alert("Favor de ingresar una cantidad");
->>>>>>> 2356c65bc2b584bdb705240a939f5592432daa1e
 		return false;
 	}else{
 		return true;
